@@ -4,9 +4,10 @@ using System.Text;
 
 namespace LandingProject.Models
 {
-    public class LandingPlatform
-        : Square
+    public enum TrajectoryResult
     {
-        public bool BeforeChecked { get; set; }
+        OutOfPlatform = 0,
+        Clash = 1,
+        OkForLanding = 2,
     }
 }
